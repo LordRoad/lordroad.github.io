@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>一棵树</title>
+  <subtitle>上海我没有了解它</subtitle>
+  <link href="/atom.xml" rel="self"/>
+  
+  <link href="https://lordroad.github.io/"/>
+  <updated>2017-06-12T03:19:04.000Z</updated>
+  <id>https://lordroad.github.io/</id>
+  
+  <author>
+    <name>return</name>
+    
+  </author>
+  
+  <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>微服务</title>
+    <link href="https://lordroad.github.io/2017/06/08/zqzb/"/>
+    <id>https://lordroad.github.io/2017/06/08/zqzb/</id>
+    <published>2017-06-08T06:14:55.000Z</published>
+    <updated>2017-06-12T03:19:04.000Z</updated>
+    
+    <content type="html"><![CDATA[<p>从游戏转到互联网,感受到开放,社区,挺好玩的.做个简单总结,只列一下自己用到的,遇到的.<br>小团队依靠云厂商还是靠得住的,但是也经常出问题,网络抖,DNS解析挂,高防黑洞,KV,共享内网流量攻击等等. 流量起来后外部的问题也很多,劫持的,爬数据的,各种刷的,DDos的等等.</p>
+<h2 id="CI"><a href="#CI" class="headerlink" title="CI"></a>CI</h2><p>还是需要运维同学,自己搭遇到坑不容易搞定. 阿里云和腾讯云都有很多基础服务,<br>但是很多需要定制和监控的还是自己部署,SLB,DNS,高防,存储,RDS,KV,OSS,云盘等等.前期刚运营都可以买点服务跑起来,其他的数据平台,日志,推荐都可以ECS搭.</p>
+<p><a href="https://github.com/git/git" target="_blank" rel="external">git</a><br><a href="https://github.com/gitlabhq/gitlabhq" target="_blank" rel="external">gitlab</a><br><a href="https://github.com/kohsuke/jenkins" target="_blank" rel="external">jenkins</a><br><a href="https://www.docker.com/" target="_blank" rel="external">docker</a><br><a href="https://github.com/docker/docker-registry" target="_blank" rel="external">docker registry</a><br><a href="https://github.com/docker/compose" target="_blank" rel="external">docker compose</a><br><a href="https://github.com/ansible/ansible" target="_blank" rel="external">ansible</a><br><a href="https://github.com/apache/mesos" target="_blank" rel="external">mesos</a><br><a href="https://github.com/mesosphere/marathon" target="_blank" rel="external">marathon</a><br><a href="https://github.com/kubernetes/kubernetes" target="_blank" rel="external">kubernetes</a></p>
+<a id="more"></a>
+<h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><p>php总是建模和快速迭代的第一选择,整个流程的确快.之前有个同事写的<a href="https://github.com/yiisoft/yii2" target="_blank" rel="external">Yii</a>挺流行的.</p>
+<p><a href="https://php-fpm.org/" target="_blank" rel="external">FPM</a><br><a href="https://www.nginx.com/resources/wiki/start/topics/examples/phpfcgi/" target="_blank" rel="external">Nginx</a><br><a href="https://github.com/laravel/lumen" target="_blank" rel="external">lumne</a><br><a href="https://github.com/laravel/laravel" target="_blank" rel="external">laravel</a></p>
+<h2 id="Gateway"><a href="#Gateway" class="headerlink" title="Gateway"></a>Gateway</h2><p>gateway的方式挺多的,云厂商一般都有LB挡在前面(LB的实现也有好些,7层,4层).<br>内部的Edge server+API Server+Service.</p>
+<p><a href="https://github.com/openresty/openresty" target="_blank" rel="external">openresty</a><br><a href="https://github.com/openresty/lua-nginx-module" target="_blank" rel="external">lua nginx</a><br><a href="https://github.com/Netflix/zuul" target="_blank" rel="external">zuul</a><br><a href="http://docs.oracle.com/javaee/6/tutorial/doc/bnafd.html" target="_blank" rel="external">java servlet</a><br><a href="https://github.com/undertow-io" target="_blank" rel="external">undertow</a></p>
+<h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><p>流量起来了,业务也变得复杂,PHP扛不住.转java拆分服务,开源方案多,会的人多,坑踩过的也多,顺理成章.首先是拆出去,用户,订单,支付,商品,抽奖,优惠券等等.然后细分,继续拆,每个人打理几个服务.还是业务做起来了,快速扩张.细分后内存用多,CPU多,还是挺贵的</p>
+<p><a href="http://projects.spring.io/spring-framework/" target="_blank" rel="external">spring framework</a><br><a href="http://projects.spring.io/spring-boot/" target="_blank" rel="external">spring boot</a><br><a href="https://github.com/spring-cloud" target="_blank" rel="external">spring cloud</a><br><a href="https://github.com/apache/tomcat" target="_blank" rel="external">tomcat</a><br><a href="https://github.com/undertow-io/undertow" target="_blank" rel="external">undertow</a><br><a href="http://www.eclipse.org/jetty/" target="_blank" rel="external">jetty</a></p>
+<h2 id="Tool"><a href="#Tool" class="headerlink" title="Tool"></a>Tool</h2><h3 id="业务"><a href="#业务" class="headerlink" title="业务"></a>业务</h3><p>除了使用厂商的服务外,自己也搭配一些.我觉得<a href="https://github.com/Netflix" target="_blank" rel="external">Netflix</a>的技术栈非常棒,目前用的不多.</p>
+<p><a href="https://github.com/Netflix/Hystrix" target="_blank" rel="external">hystrix</a><br><a href="https://github.com/CodisLabs/codis" target="_blank" rel="external">codis</a><br><a href="https://github.com/antirez/redis" target="_blank" rel="external">redis</a><br><a href="https://github.com/apache/curator" target="_blank" rel="external">curator</a><br><a href="https://github.com/ehcache/ehcache3" target="_blank" rel="external">ehcache</a><br><a href="https://github.com/mybatis/mybatis-3" target="_blank" rel="external">mybatis</a><br><a href="https://code.google.com/archive/p/shardbatis/" target="_blank" rel="external">shardbatis</a><br><a href="https://github.com/dianping/zebra" target="_blank" rel="external">zebra</a><br><a href="http://www.h2database.com/html/quickstart.html" target="_blank" rel="external">h2</a><br><a href="https://dev.mysql.com/doc/refman/5.7/en/" target="_blank" rel="external">mysql</a><br><a href="https://github.com/apache/cassandra" target="_blank" rel="external">cassandra</a><br><a href="https://github.com/apache/activemq" target="_blank" rel="external">activemq</a><br><a href="https://github.com/rabbitmq/rabbitmq-server" target="_blank" rel="external">rabbitmq</a><br><a href="https://github.com/apache/incubator-rocketmq" target="_blank" rel="external">rocketmq</a><br><a href="https://github.com/apache/kafka" target="_blank" rel="external">kafka</a><br><a href="http://swagger.io/docs/specification/basic-structure/" target="_blank" rel="external">swagger</a></p>
+<h3 id="服务"><a href="#服务" class="headerlink" title="服务"></a>服务</h3><p><a href="https://github.com/mesosphere" target="_blank" rel="external">mesosphere</a><br><a href="https://github.com/mesosphere/mesos-dns" target="_blank" rel="external">marathon-dns</a><br><a href="https://github.com/mesosphere/marathon-lb" target="_blank" rel="external">marathon-lb</a><br><a href="https://github.com/coreos/etcd" target="_blank" rel="external">etcd</a><br><a href="https://github.com/hashicorp/consul" target="_blank" rel="external">consul</a><br><a href="https://github.com/apache/incubator-airflow" target="_blank" rel="external">airflow</a></p>
+<h3 id="支撑"><a href="#支撑" class="headerlink" title="支撑"></a>支撑</h3><p><a href="https://github.com/elastic/elasticsearch" target="_blank" rel="external">elastic search</a><br><a href="https://github.com/elastic/logstash" target="_blank" rel="external">logstash</a><br><a href="https://github.com/elastic/kibana" target="_blank" rel="external">kibana</a><br><a href="https://github.com/grafana/grafana" target="_blank" rel="external">grafana</a><br><a href="https://github.com/influxdata/influxdb" target="_blank" rel="external">influxdb</a><br><a href="https://github.com/dianping/cat" target="_blank" rel="external">cat</a><br><a href="https://github.com/chenxiaojie/lion" target="_blank" rel="external">lion</a><br><a href="https://github.com/apache/zookeeper" target="_blank" rel="external">zookeeper</a></p>
+<h2 id="其他"><a href="#其他" class="headerlink" title="其他"></a>其他</h2><ul>
+<li>Go技术栈应用了快速服务.</li>
+<li>Nodejs应用在前端的后端.</li>
+<li>Python技术栈平台在用,业务这边基本都是离线</li>
+</ul>
+<h2 id="TODO"><a href="#TODO" class="headerlink" title="TODO"></a>TODO</h2><ul>
+<li>链路监控</li>
+<li>风控中心</li>
+</ul>
+<p>缺少的以后补充.</p>
+]]></content>
+    
+    <summary type="html">
+    
+      &lt;p&gt;从游戏转到互联网,感受到开放,社区,挺好玩的.做个简单总结,只列一下自己用到的,遇到的.&lt;br&gt;小团队依靠云厂商还是靠得住的,但是也经常出问题,网络抖,DNS解析挂,高防黑洞,KV,共享内网流量攻击等等. 流量起来后外部的问题也很多,劫持的,爬数据的,各种刷的,DDos的等等.&lt;/p&gt;
+&lt;h2 id=&quot;CI&quot;&gt;&lt;a href=&quot;#CI&quot; class=&quot;headerlink&quot; title=&quot;CI&quot;&gt;&lt;/a&gt;CI&lt;/h2&gt;&lt;p&gt;还是需要运维同学,自己搭遇到坑不容易搞定. 阿里云和腾讯云都有很多基础服务,&lt;br&gt;但是很多需要定制和监控的还是自己部署,SLB,DNS,高防,存储,RDS,KV,OSS,云盘等等.前期刚运营都可以买点服务跑起来,其他的数据平台,日志,推荐都可以ECS搭.&lt;/p&gt;
+&lt;p&gt;&lt;a href=&quot;https://github.com/git/git&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;git&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/gitlabhq/gitlabhq&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;gitlab&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/kohsuke/jenkins&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;jenkins&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://www.docker.com/&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;docker&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/docker/docker-registry&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;docker registry&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/docker/compose&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;docker compose&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/ansible/ansible&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;ansible&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/apache/mesos&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;mesos&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/mesosphere/marathon&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;marathon&lt;/a&gt;&lt;br&gt;&lt;a href=&quot;https://github.com/kubernetes/kubernetes&quot; target=&quot;_blank&quot; rel=&quot;external&quot;&gt;kubernetes&lt;/a&gt;&lt;/p&gt;
+    
+    </summary>
+    
+    
+  </entry>
+  
+</feed>
