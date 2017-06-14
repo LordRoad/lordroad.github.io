@@ -5,7 +5,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://reartemis.com/"/>
-  <updated>2017-06-12T08:58:49.000Z</updated>
+  <updated>2017-06-12T09:01:18.000Z</updated>
   <id>http://reartemis.com/</id>
   
   <author>
@@ -20,14 +20,14 @@
     <link href="http://reartemis.com/2017/06/08/zqzb/"/>
     <id>http://reartemis.com/2017/06/08/zqzb/</id>
     <published>2017-06-08T06:14:55.000Z</published>
-    <updated>2017-06-12T08:58:49.000Z</updated>
+    <updated>2017-06-12T09:01:18.000Z</updated>
     
     <content type="html"><![CDATA[<p>从游戏转到互联网,感受到开放,社区,挺好玩的.做个简单总结,只列一下自己用到的,遇到的.<br>小团队依靠云厂商还是靠得住的,但是也经常出问题,网络抖,DNS解析挂,高防黑洞,KV,共享内网流量攻击等等. 流量起来后外部的问题也很多,劫持的,爬数据的,各种刷的,DDos的等等.</p>
 <h2 id="CI"><a href="#CI" class="headerlink" title="CI"></a>CI</h2><p>还是需要运维同学,自己搭遇到坑不容易搞定. 阿里云和腾讯云都有很多基础服务,<br>但是很多需要定制和监控的还是自己部署,SLB,DNS,高防,存储,RDS,KV,OSS,云盘等等.前期刚运营都可以买点服务跑起来,其他的数据平台,日志,推荐都可以ECS搭.</p>
 <p><a href="https://github.com/git/git" target="_blank" rel="external">git</a><br><a href="https://github.com/gitlabhq/gitlabhq" target="_blank" rel="external">gitlab</a><br><a href="https://github.com/kohsuke/jenkins" target="_blank" rel="external">jenkins</a><br><a href="https://www.docker.com/" target="_blank" rel="external">docker</a><br><a href="https://github.com/docker/docker-registry" target="_blank" rel="external">docker registry</a><br><a href="https://github.com/docker/compose" target="_blank" rel="external">docker compose</a><br><a href="https://github.com/ansible/ansible" target="_blank" rel="external">ansible</a><br><a href="https://github.com/apache/mesos" target="_blank" rel="external">mesos</a><br><a href="https://github.com/mesosphere/marathon" target="_blank" rel="external">marathon</a><br><a href="https://github.com/kubernetes/kubernetes" target="_blank" rel="external">kubernetes</a></p>
 <a id="more"></a>
 <h2 id="PHP"><a href="#PHP" class="headerlink" title="PHP"></a>PHP</h2><p>php总是建模和快速迭代的第一选择,整个流程的确快.之前有个同事写的<a href="https://github.com/yiisoft/yii2" target="_blank" rel="external">Yii</a>挺流行的.</p>
-<p><a href="https://php-fpm.org/" target="_blank" rel="external">FPM</a><br><a href="https://www.nginx.com/resources/wiki/start/topics/examples/phpfcgi/" target="_blank" rel="external">Nginx</a><br><a href="https://github.com/laravel/lumen" target="_blank" rel="external">lumne</a><br><a href="https://github.com/laravel/laravel" target="_blank" rel="external">laravel</a></p>
+<p><a href="https://php-fpm.org/" target="_blank" rel="external">FPM</a><br><a href="https://www.nginx.com/resources/wiki/start/topics/examples/phpfcgi/" target="_blank" rel="external">Nginx</a><br><a href="https://github.com/laravel/lumen" target="_blank" rel="external">lumen</a><br><a href="https://github.com/laravel/laravel" target="_blank" rel="external">laravel</a></p>
 <h2 id="Gateway"><a href="#Gateway" class="headerlink" title="Gateway"></a>Gateway</h2><p>gateway的方式挺多的,云厂商一般都有LB挡在前面(LB的实现也有好些,7层,4层).<br>内部的Edge server+API Server+Service.</p>
 <p><a href="https://github.com/openresty/openresty" target="_blank" rel="external">openresty</a><br><a href="https://github.com/openresty/lua-nginx-module" target="_blank" rel="external">lua nginx</a><br><a href="https://github.com/Netflix/zuul" target="_blank" rel="external">zuul</a><br><a href="http://docs.oracle.com/javaee/6/tutorial/doc/bnafd.html" target="_blank" rel="external">java servlet</a><br><a href="https://github.com/undertow-io" target="_blank" rel="external">undertow</a></p>
 <h2 id="Java"><a href="#Java" class="headerlink" title="Java"></a>Java</h2><p>流量起来了,业务也变得复杂,PHP扛不住.转java拆分服务,开源方案多,会的人多,坑踩过的也多,顺理成章.首先是拆出去,用户,订单,支付,商品,抽奖,优惠券等等.然后细分,继续拆,每个人打理几个服务.还是业务做起来了,快速扩张.细分后内存用多,CPU多,还是挺贵的</p>
